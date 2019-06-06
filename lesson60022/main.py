@@ -32,6 +32,7 @@ def testRoll(n=10):
 # random.seed(123)
 
 
+# a simulation is only and approximation to reality
 def runSim(goal, numTrials=1000):
     """stochastically returns probability of sequence of roll dices over numTrials tries"""
     total = 0
@@ -45,6 +46,9 @@ def runSim(goal, numTrials=1000):
     print('actual probability: ' + str(round(1 / 6 ** len(goal), 8)))
 
 # print(testRoll(5))
+
+
+
 
 
 runSim('11111')
